@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.nlmg{
+  &-logo{
+    float: left;
+    margin-right: 10px;
+  }
+  &-pre{
+    padding: 1em;
+    margin: 2em 0;
+    font-family: monospace;
+    color: #222;
+    background: #ddd;
+  }
+  &-tag{
+    color: #888;
+  }
+  @at-root ul#{&}-list{
+    padding-left: 2em;
+    li{
+      list-style: disc outside;
+    }
+  }
+
+  &-inc{
+    &-search{
+      img{
+        float: left;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        vertical-align: middle;
+        border-radius: 50%;
+      }
+    }
+    &-name{
+      small{
+        margin-left: 5px;
+        color: #888;
+      }
+    }
+  }
+}
+
